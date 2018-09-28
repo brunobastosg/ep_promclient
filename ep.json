@@ -1,0 +1,10 @@
+{
+    "parts": [
+      {
+        "name": "metrics",
+        "hooks": {
+          "expressCreateServer": "ep_promclient/metrics:expressCreateServer"
+        }
+      }
+    ]
+  }

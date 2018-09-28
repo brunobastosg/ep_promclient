@@ -1,0 +1,12 @@
+{
+  "name": "ep_promclient",
+  "version": "0.0.1",
+  "description": "Prometheus client for Etherpad",
+  "author": "Bruno Guimarães",
+  "dependencies": {
+    "prom-client": "11.1.3"
+  },
+  "engines": {
+    "node": ">= 6.9"
+  }
+}
