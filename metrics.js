@@ -3,9 +3,10 @@ const register = client.register;
 
 client.collectDefaultMetrics();
 
-exports.expressCreateServer = function(hook, context) {
-    context.app.get('/metrics', function (req, res) {
+exports.expressCreateServer = (hook, context) => {
+    context.app.get('/metrics', async (req, res) => {
         res.set('Content-Type', register.contentType);
-        res.end(register.metrics());
+        res.end(await register.metrics());
+        res.send();
     });
 }
