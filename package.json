@@ -1,8 +1,12 @@
 {
   "name": "ep_promclient",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Prometheus client for Etherpad",
   "author": "Bruno Guimarães",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunobastosg/ep_promclient"
+  },
   "dependencies": {
     "prom-client": "13.1.0"
   },
